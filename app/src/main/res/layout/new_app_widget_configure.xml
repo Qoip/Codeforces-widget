@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:labelFor="@id/appwidget_text"
+        android:text="@string/configure"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/appwidget_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="28dp"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/txtcol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:labelFor="@id/appwidget_text"
+        android:text="Choose color"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/appwidget_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:shadowColor="#F00"
+        android:textColor="#FFFFFF"
+        android:shadowDx="-2"
+        android:padding="5dp"
+        android:shadowDy="2"
+        android:forceDarkAllowed="false"
+        android:shadowRadius="5"
+        android:textSize="20sp"
+        android:background="@color/nice"
+        android:text="#3159a8"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/ch_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="change color" />
+
+    <ToggleButton
+        android:id="@+id/sw"
+        android:layout_marginTop="16dp"
+        android:textOff="White text (click to change)"
+        android:textOn="Dark text (click to change)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/add_widget" />
+
+    <TextView
+        android:id="@+id/textTry"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:textSize="28dp"
+        android:text="Cf"/>
+
+</LinearLayout>
